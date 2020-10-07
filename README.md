@@ -1,3 +1,9 @@
+## [Mission Focus](https://github.com/missionfocus)
+
+This is a forked repo of [Veritcal-Collection](https://github.com/html-next/vertical-collection)
+
+---
+
 # vertical-collection
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/html-next/vertical-collection.svg)](https://greenkeeper.io/)
