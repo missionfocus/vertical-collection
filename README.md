@@ -2,7 +2,7 @@
 
 This is a forked repo of [Veritcal-Collection](https://github.com/html-next/vertical-collection).
 
-This fork was created to address a breaking issue related to some components not being appended properly when we scrolling fast and `shouldRecycle` set to `false`, as specified in [issue #296](https://github.com/html-next/vertical-collection/pull/299).
+This fork was created to address a breaking issue related to some components not being appended properly when we scrolling fast while `shouldRecycle` set to `false`, as specified in [issue #296](https://github.com/html-next/vertical-collection/pull/299).
 
 ---
 
