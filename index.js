@@ -42,7 +42,7 @@ module.exports = {
         isProductionEnv() ? '-debug' : false
       ].filter(Boolean),
 
-      destDir: '@missionfocus/mf-vertical-collection'
+      destDir: '@missionfocus/vertical-collection'
     });
 
     let privateTree = babel.transpileTree(withPrivate, {
@@ -65,10 +65,10 @@ module.exports = {
         input: '-private/index.js',
         output: [
           {
-            file: '@missionfocus/mf-vertical-collection/-private.js',
+            file: '@missionfocus/vertical-collection/-private.js',
             format: 'amd',
             amd: {
-              id: '@missionfocus/mf-vertical-collection/-private'
+              id: '@missionfocus/vertical-collection/-private'
             }
           }
         ],

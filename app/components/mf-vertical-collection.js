@@ -1,1 +1,1 @@
-export { default } from '@missionfocus/mf-vertical-collection/components/vertical-collection/component';
+export { default } from '@missionfocus/vertical-collection/components/vertical-collection/component';

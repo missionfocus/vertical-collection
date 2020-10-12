@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import VerticalCollection from '@missionfocus/mf-vertical-collection/components/vertical-collection/component';
+import VerticalCollection from '@missionfocus/vertical-collection/components/vertical-collection/component';
 
 const { HTMLBars } = Ember;
 

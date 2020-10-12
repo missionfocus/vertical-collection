@@ -1,4 +1,4 @@
-import '@missionfocus/mf-vertical-collection/-debug';
+import '@missionfocus/vertical-collection/-debug';
 
 export default {
   name: 'vertical-collection-debug',
