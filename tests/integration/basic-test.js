@@ -88,7 +88,7 @@ testScenarios(
   hbs`
     <div style="height: 100px;" class="scrollable">
       <div>
-        {{#vertical-collection items
+        {{#mf-vertical-collection items
           containerSelector=".scrollable"
           estimateHeight=20
           staticHeight=true
@@ -98,7 +98,7 @@ testScenarios(
           <vertical-item style="height: 20px">
             {{item.number}} {{i}}
           </vertical-item>
-        {{/vertical-collection}}
+        {{/mf-vertical-collection}}
       </div>
     </div>
   `,
@@ -116,7 +116,7 @@ testScenarios(
   hbs`
     <div style="height: 100px; padding-top: 50px;" class="scrollable">
       <div>
-        {{#vertical-collection items
+        {{#mf-vertical-collection items
           containerSelector=".scrollable"
           estimateHeight=20
           staticHeight=true
@@ -126,7 +126,7 @@ testScenarios(
           <vertical-item style="height: 20px">
             {{item.number}} {{i}}
           </vertical-item>
-        {{/vertical-collection}}
+        {{/mf-vertical-collection}}
       </div>
     </div>
   `,
@@ -149,7 +149,7 @@ testScenarios(
   hbs`
     <div style="position: relative; background: red; box-sizing: content-box; height: 100px; overflow-y: scroll;" class="scrollable">
       <div style="padding: 200px;">
-        {{#vertical-collection items
+        {{#mf-vertical-collection items
           containerSelector=".scrollable"
           estimateHeight=20
           bufferSize=0
@@ -158,7 +158,7 @@ testScenarios(
           <vertical-item style="height: 28px">
             {{item.number}} {{i}}
           </vertical-item>
-        {{/vertical-collection}}
+        {{/mf-vertical-collection}}
       </div>
     </div>
   `,
@@ -180,7 +180,7 @@ testScenarios(
 
   hbs`
     <div style="height: 500px; width: 500px;">
-      {{#vertical-collection items
+      {{#mf-vertical-collection items
         estimateHeight=10
         containerSelector="body"
         as |item|
@@ -193,7 +193,7 @@ testScenarios(
             </section>
           {{/if}}
         </div>
-      {{/vertical-collection}}
+      {{/mf-vertical-collection}}
     </div>
   `,
 
@@ -208,7 +208,7 @@ test('The collection renders the initialRenderCount correctly', async function(a
 
   this.render(hbs`
     <div style="height: 500px; width: 500px;" class="scrollable">
-      {{#vertical-collection items
+      {{#mf-vertical-collection items
         estimateHeight=50
         initialRenderCount=1
         as |item i|
@@ -216,7 +216,7 @@ test('The collection renders the initialRenderCount correctly', async function(a
         <vertical-item style="height: 50px">
           {{item.number}} {{i}}
         </vertical-item>
-      {{/vertical-collection}}
+      {{/mf-vertical-collection}}
     </div>
   `);
 
@@ -236,7 +236,7 @@ test('The collection renders the initialRenderCount correctly if idForFirstItem 
 
   this.render(hbs`
     <div style="height: 500px; width: 500px;" class="scrollable">
-      {{#vertical-collection items
+      {{#mf-vertical-collection items
         estimateHeight=50
         initialRenderCount=1
         idForFirstItem="20"
@@ -246,7 +246,7 @@ test('The collection renders the initialRenderCount correctly if idForFirstItem 
         <vertical-item style="height: 50px">
           {{item.number}} {{i}}
         </vertical-item>
-      {{/vertical-collection}}
+      {{/mf-vertical-collection}}
     </div>
   `);
 
@@ -266,7 +266,7 @@ test('The collection renders the initialRenderCount correctly if the count is mo
 
   this.render(hbs`
     <div style="height: 500px; width: 500px;" class="scrollable">
-      {{#vertical-collection items
+      {{#mf-vertical-collection items
         estimateHeight=50
         initialRenderCount=5
         as |item i|
@@ -274,7 +274,7 @@ test('The collection renders the initialRenderCount correctly if the count is mo
         <vertical-item style="height: 50px">
           {{item.number}} {{i}}
         </vertical-item>
-      {{/vertical-collection}}
+      {{/mf-vertical-collection}}
     </div>
   `);
 
@@ -296,7 +296,7 @@ testScenarios(
   hbs`
     <div style="height: 100px;" class="scrollable">
       <div style="padding-top: 400px;">
-        {{#vertical-collection items
+        {{#mf-vertical-collection items
           containerSelector=".scrollable"
           estimateHeight=20
           bufferSize=2
@@ -305,7 +305,7 @@ testScenarios(
           <vertical-item style="height: 20px">
             {{item.number}} {{i}}
           </vertical-item>
-        {{/vertical-collection}}
+        {{/mf-vertical-collection}}
       </div>
     </div>
   `,
@@ -330,11 +330,11 @@ testScenarios(
       <div style="height: 1000px; width: 500px;"></div>
 
       {{#if renderCollection}}
-        {{#vertical-collection items estimateHeight="20" as |item|}}
+        {{#mf-vertical-collection items estimateHeight="20" as |item|}}
           <div>
             Content
           </div>
-        {{/vertical-collection}}
+        {{/mf-vertical-collection}}
       {{/if}}
     </div>
   `,

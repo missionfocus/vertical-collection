@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { ScrollHandler } from '@html-next/vertical-collection/-private';
+import { ScrollHandler } from '@missionfocus/mf-vertical-collection/-private';
 
 import { scheduler } from 'ember-raf-scheduler';
 

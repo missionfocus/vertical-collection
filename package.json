@@ -1,6 +1,6 @@
 {
-  "name": "@html-next/vertical-collection",
-  "version": "1.0.0",
+  "name": "@missionfocus/mf-vertical-collection",
+  "version": "1.0.1",
   "description": "infinite-scroll, done right. done.",
   "keywords": [
     "occlusion",
@@ -30,15 +30,20 @@
       "name": "Robert Wagner (@rwwagner90)",
       "email": "rwwagner90@gmail.com",
       "url": "https://github.com/rwwagner90"
+    },
+    {
+      "name": "Levi Paulk (@levipaulk)",
+      "email": "levipaulk@gmail.com",
+      "url": "https://github.com/levipaulk"
     }
   ],
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "https://github.com/html-next/vertical-collection.git",
-  "homepage": "https://github.com/html-next/vertical-collection",
-  "bugs": "https://github.com/html-next/vertical-collection/issues",
+  "repository": "https://github.com/missionfocus/vertical-collection.git",
+  "homepage": "https://github.com/missionfocus/vertical-collection",
+  "bugs": "https://github.com/missionfocus/vertical-collection/issues",
   "scripts": {
     "build": "ember build",
     "lint:hbs": "ember-template-lint .",

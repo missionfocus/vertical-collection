@@ -3,7 +3,7 @@
 ## Installation
 
 * `git clone <repository-url>`
-* `cd @html-next/vertical-collection`
+* `cd @missionfocus/mf-vertical-collection`
 * `yarn install`
 
 ## Linting
