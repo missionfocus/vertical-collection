@@ -147,7 +147,7 @@ testScenarios(
   hbs`
     <div style="transform: scale(0.333333)">
       <div style="height: 100px" class="scrollable">
-        {{#vertical-collection items
+        {{#mf-vertical-collection items
           estimateHeight=20
           bufferSize=0
 
@@ -155,7 +155,7 @@ testScenarios(
           <vertical-item style="height: 30px">
             {{item.number}} {{i}}
           </vertical-item>
-        {{/vertical-collection}}
+        {{/mf-vertical-collection}}
       </div>
     </div>
   `,

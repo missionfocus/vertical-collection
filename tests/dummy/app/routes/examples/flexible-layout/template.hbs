@@ -4,7 +4,7 @@
       <h3>Demo</h3>
       {{!- BEGIN-SNIPPET flexible-layout-example }}
       <div class="table-wrapper dark">
-        {{#vertical-collection
+        {{#mf-vertical-collection
           model.numbers
           estimateHeight=270
           firstReached=(action "loadAbove")
@@ -12,7 +12,7 @@
           bufferSize=0 as |item index|
         }}
           {{number-slide isDynamic=true item=item index=index}}
-        {{/vertical-collection}}
+        {{/mf-vertical-collection}}
       </div>
       {{!- END-SNIPPET }}
     </div>

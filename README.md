@@ -38,7 +38,7 @@ ember install @html-next/vertical-collection
 ## Usage
 
 ```htmlbars
-{{#vertical-collection
+{{#mf-vertical-collection
     items
     tagName='ul'
     estimateHeight=50
@@ -55,7 +55,7 @@ ember install @html-next/vertical-collection
     <li>
       {{item.number}} {{i}}
     </li>
-{{/vertical-collection}}
+{{/mf-vertical-collection}}
 ```
 
 ### Actions

@@ -23,7 +23,7 @@ testScenarios(
 
   hbs`
     <div style="height: 100px; font-size: 10px;" class="scrollable">
-      {{#vertical-collection items
+      {{#mf-vertical-collection items
         estimateHeight="2em"
         staticHeight=staticHeight
         bufferSize=0
@@ -32,7 +32,7 @@ testScenarios(
         <vertical-item style="height: 2em">
           {{item.number}} {{i}}
         </vertical-item>
-      {{/vertical-collection}}
+      {{/mf-vertical-collection}}
     </div>
   `,
 
@@ -47,7 +47,7 @@ testScenarios(
 
   hbs`
     <div style="height: 100px; font-size: 10px;" class="scrollable">
-      {{#vertical-collection items
+      {{#mf-vertical-collection items
         estimateHeight="2rem"
         staticHeight=staticHeight
         bufferSize=0
@@ -56,7 +56,7 @@ testScenarios(
         <vertical-item style="height: 2rem">
           {{item.number}} {{i}}
         </vertical-item>
-      {{/vertical-collection}}
+      {{/mf-vertical-collection}}
     </div>
   `,
 
@@ -71,7 +71,7 @@ testScenarios(
 
   hbs`
     <div style="height: 100px;" class="scrollable">
-      {{#vertical-collection items
+      {{#mf-vertical-collection items
         estimateHeight="66%"
         staticHeight=staticHeight
         bufferSize=0
@@ -80,7 +80,7 @@ testScenarios(
         <vertical-item style="height: 66%">
           {{item.number}} {{i}}
         </vertical-item>
-      {{/vertical-collection}}
+      {{/mf-vertical-collection}}
     </div>
   `,
 
@@ -95,7 +95,7 @@ testScenarios(
 
   hbs`
     <div style="height: 100px; font-size: 10px;" class="scrollable">
-      {{#vertical-collection items
+      {{#mf-vertical-collection items
         estimateHeight="2em"
         staticHeight=staticHeight
         bufferSize=0
@@ -104,7 +104,7 @@ testScenarios(
         <vertical-item style="height: 2em">
           {{item.number}} {{i}}
         </vertical-item>
-      {{/vertical-collection}}
+      {{/mf-vertical-collection}}
     </div>
   `,
 
@@ -120,7 +120,7 @@ testScenarios(
   hbs`
     <div class="scrollable with-pixel-max-height">
       <div>
-        {{#vertical-collection items
+        {{#mf-vertical-collection items
           containerSelector=".scrollable"
           estimateHeight=20
           staticHeight=staticHeight
@@ -130,7 +130,7 @@ testScenarios(
           <vertical-item style="height: 20px">
             {{item.number}} {{i}}
           </vertical-item>
-        {{/vertical-collection}}
+        {{/mf-vertical-collection}}
       </div>
     </div>
   `,
@@ -148,7 +148,7 @@ testScenarios(
     <div style="height: 400px;">
       <div class="scrollable with-percent-max-height">
         <div>
-          {{#vertical-collection items
+          {{#mf-vertical-collection items
             containerSelector=".scrollable"
             estimateHeight=20
             staticHeight=staticHeight
@@ -158,7 +158,7 @@ testScenarios(
             <vertical-item style="height: 20px">
               {{item.number}} {{i}}
             </vertical-item>
-          {{/vertical-collection}}
+          {{/mf-vertical-collection}}
         </div>
       </div>
     </div>
@@ -177,7 +177,7 @@ testScenarios(
     <div style="font-size: 20px;">
       <div class="scrollable with-em-max-height">
         <div>
-          {{#vertical-collection items
+          {{#mf-vertical-collection items
             containerSelector=".scrollable"
             estimateHeight=20
             staticHeight=staticHeight
@@ -187,7 +187,7 @@ testScenarios(
             <vertical-item style="height: 20px">
               {{item.number}} {{i}}
             </vertical-item>
-          {{/vertical-collection}}
+          {{/mf-vertical-collection}}
         </div>
       </div>
     </div>
@@ -205,7 +205,7 @@ testScenarios(
   hbs`
     <div class="scrollable with-rem-max-height">
       <div>
-        {{#vertical-collection items
+        {{#mf-vertical-collection items
           containerSelector=".scrollable"
           estimateHeight=20
           staticHeight=staticHeight
@@ -215,7 +215,7 @@ testScenarios(
           <vertical-item style="height: 20px">
             {{item.number}} {{i}}
           </vertical-item>
-        {{/vertical-collection}}
+        {{/mf-vertical-collection}}
       </div>
     </div>
   `,

@@ -13,13 +13,13 @@ test('Yields to inverse when no content is provided', async function(assert) {
 
   this.render(hbs`
       <div class="scrollable">
-        {{#vertical-collection items
+        {{#mf-vertical-collection items
           estimateHeight=20
           staticHeight=true
         }}
           {{else}}
             Foobar
-        {{/vertical-collection}}
+        {{/mf-vertical-collection}}
       </div>
     `);
 

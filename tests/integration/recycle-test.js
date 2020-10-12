@@ -25,7 +25,7 @@ testScenarios(
   hbs`
     <div style="height: 200px" class="scrollable with-max-height">
       <div>
-        {{#vertical-collection items
+        {{#mf-vertical-collection items
           containerSelector=".scrollable"
           estimateHeight=20
           staticHeight=staticHeight
@@ -36,7 +36,7 @@ testScenarios(
           <vertical-item style="height: 20px">
             {{unbound item.number}} {{unbound i}}
           </vertical-item>
-        {{/vertical-collection}}
+        {{/mf-vertical-collection}}
       </div>
     </div>
   `,
@@ -59,7 +59,7 @@ testScenarios(
   hbs`
     <div style="height: 200px" class="scrollable">
       <div>
-        {{#vertical-collection items
+        {{#mf-vertical-collection items
           containerSelector=".scrollable"
           estimateHeight=20
           staticHeight=staticHeight
@@ -70,7 +70,7 @@ testScenarios(
           <vertical-item style="height: 20px">
             {{unbound item.number}} {{unbound i}}
           </vertical-item>
-        {{/vertical-collection}}
+        {{/mf-vertical-collection}}
       </div>
     </div>
   `,
